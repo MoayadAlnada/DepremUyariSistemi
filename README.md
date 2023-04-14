@@ -1,5 +1,5 @@
 # simpledepremuyariapp
-Deprem Erken Uyarı Sistemi
+Deprem Erken Uyarı Sistemi \n
 Bu programda kullancı olarak hesap oluşuturulabilir sonra giriş yapıp adminden gönderen uyarıları görünütülebilir.
 kullancı olarak "Şifre Unuttum" seçip şifreni değiştirebilirsiniz
 Admin olarak giriş yapmak için "admin" ve "123456789+" sırayla adı ve şifre ile giriş yapabilirsiniz veya "Admin bilgileri değiştirmek" seçenek seçip yeni admin adını ve şifresi değiştirebilirsiniz
