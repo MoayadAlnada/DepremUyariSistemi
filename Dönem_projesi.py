@@ -8,9 +8,8 @@ back = False
 anamenu = False
 i=1
 
-
+print("Dönem Projesi 'MOAYAD ALNADA' 201601716")
 def ana_menu():
-    print("Dönem Projesi 'MOAYAD ALNADA' 201601716")
     print("\n1. Üye Ol")
     print("2. Giriş Yap")
     print("3. Şifremi Unuttum")
