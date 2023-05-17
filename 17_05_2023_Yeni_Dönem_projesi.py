@@ -18,6 +18,13 @@ colored_input = lambda prompt: input(f"{input_color}{prompt}{Style.RESET_ALL}")
 falsed_print = lambda text: print(f"{print_fcolor}{text}{Style.RESET_ALL}")
 trued_print = lambda text: print(f"{print_tcolor}{text}{Style.RESET_ALL}")
 
+def colored_input(prompt):
+    return input(f"{input_color}{prompt}{Style.RESET_ALL}")
+def falsed_print(text):
+    print(f"{print_fcolor}{text}{Style.RESET_ALL}")
+def trued_print(text):
+    print(f"{print_tcolor}{text}{Style.RESET_ALL}")
+
 
 def ana_menu():
     print(f"{menu_color}\n1. Üye Ol")
@@ -88,9 +95,9 @@ while True:
                 elif secim5 == "2":
                     break
                 else:
-                    falsed_print("Geçersiz seçim!\n",print_fcolor)
+                    falsed_print("Geçersiz seçim!\n")
         else:
-            falsed_print("\n---Şifreniz veya kullanıcı adınız hatalıdır---\n",print_fcolor)
+            falsed_print("\n---Şifreniz veya kullanıcı adınız hatalıdır---\n")
 
     elif secim == "3":
         kullanici_adi = colored_input("\nKullanıcı adı: ")
@@ -99,15 +106,15 @@ while True:
                 yeni_sifre = colored_input("Yeni şifre belirleyiniz: ")
                 if len(yeni_sifre) >= 6:
                     if kullancilar[kullanici_adi] == yeni_sifre:
-                        falsed_print("\n---Yeni şifreniz eski şifrenizle aynı olamaz. Lütfen başka bir şifre belirleyiniz---\n",print_fcolor)
+                        falsed_print("\n---Yeni şifreniz eski şifrenizle aynı olamaz. Lütfen başka bir şifre belirleyiniz---\n")
                     else:
                         kullancilar[kullanici_adi] = yeni_sifre
                         trued_print("\n---Yeni şifreniz kaydedildi---\n")
                         break
                 else:
-                    falsed_print("\n---Lütfen şifre en az 6 karakter olmalıdır---\n",print_fcolor)
+                    falsed_print("\n---Lütfen şifre en az 6 karakter olmalıdır---\n")
             else:
-                falsed_print("\n---Bu kullanıcı adı kayıtlı değildir---\n",print_fcolor)
+                falsed_print("\n---Bu kullanıcı adı kayıtlı değildir---\n")
 
     elif secim == "4":
         while True:
@@ -131,7 +138,7 @@ while True:
                                 else:
                                     print("\n")
                                     for i, kullanici in enumerate(kullancilar, start=1):
-                                        print("\033[33m{}. {}\033[0m".format(i, kullanici))
+                                        print(f"\033[33m{i}. Kul.adı: {kullanici} : Şifre: {kullancilar[kullanici]}\033[0m")
                                     print("\n")
                             elif secim3 == "2":
                                 uyari_mesaji = colored_input("Uyarı mesajını yazın: ")
@@ -140,9 +147,9 @@ while True:
                             elif secim3 == "3":
                                 break
                             else:
-                                falsed_print("Geçersiz seçim!\n",print_fcolor)
+                                falsed_print("Geçersiz seçim!\n")
                     else:
-                        falsed_print("\n---Admin adı veya şifre hatalıdır---",print_fcolor)
+                        falsed_print("\n---Admin adı veya şifre hatalıdır---")
                         break
                 elif secim2 == "2":
                     while True:
@@ -151,7 +158,7 @@ while True:
                         if secim4 == "1":
                             yeni_admin_adi = colored_input("Lütfen yeni admin adını yazınız: ")
                             if not yeni_admin_adi:
-                                falsed_print("Admin adını boş bırakamazsınız",print_fcolor)
+                                falsed_print("Admin adını boş bırakamazsınız")
                             else:
                                 adminler[0] = yeni_admin_adi
                                 trued_print("\n---Admin adı başarıyla değiştirildi---\n")
@@ -162,29 +169,29 @@ while True:
                                 yeni_admin_sifre = colored_input("Lütfen yeni şifre giriniz: ")
                                 if len(yeni_admin_sifre) >= 10:
                                     if adminler[1] in yeni_admin_sifre:
-                                        falsed_print("\n---Güvenliğiniz için yeni şifreniz eski şifrenizle aynı olamaz.---\n",print_fcolor)
+                                        falsed_print("\n---Güvenliğiniz için yeni şifreniz eski şifrenizle aynı olamaz.---\n")
                                     else:
 
                                         adminler[1] = yeni_admin_sifre
                                         trued_print("\n---Admin şifresi başarıyla değiştirildi---\n")
                                         break
                                 else:
-                                    falsed_print("\n---Admin şifresi en az 10 karakter olmalıdır---\n",print_fcolor)
+                                    falsed_print("\n---Admin şifresi en az 10 karakter olmalıdır---\n")
                             else:
-                                falsed_print("\n---Bu admin adı kayıtlı değildir---\n",print_fcolor)
+                                falsed_print("\n---Bu admin adı kayıtlı değildir---\n")
                         elif secim4 == "3":
                             break
                         else:
-                            falsed_print("Geçersiz seçim!\n",print_fcolor)
+                            falsed_print("Geçersiz seçim!\n")
                 elif secim2 == "3":
                     break
                 else:
-                    falsed_print("Geçersiz seçim!\n",print_fcolor)
+                    falsed_print("Geçersiz seçim!\n")
 
     elif secim == "5":
-        falsed_print("\nUygulamadan çıkılıyor.....",print_fcolor)
+        falsed_print("\nUygulamadan çıkılıyor.....")
         break
 
     else:
-        falsed_print("Geçersiz seçim!\n",print_fcolor)
+        falsed_print("Geçersiz seçim!\n")
             
