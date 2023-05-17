@@ -8,7 +8,7 @@ Dönem_projesi.py İçeriyi:
 17_02_2023_Yeni_Dönem_projesi.py İçeriyi:  
 * Bazı sorunları çözüldü.
 * Renkler eklendi.
-* Liste, Demet ve sözlük kullanıldı.
+* Liste, Demet ve sözlük kullanıldı.  
 Thanks for reading :)  
 MOAYAD ALNADA  
 201601716  
