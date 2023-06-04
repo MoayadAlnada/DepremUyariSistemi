@@ -12,10 +12,7 @@ Dönem_projesi.py İçeriyi:
 * Liste, Demet ve sözlük kullanıldı.  
 
 01_06_2023_guncelleme.py İçeriyi:  
-* Bu güncelleme ile save_credentials fonksiyonu, kullanıcı adını "Users" sütunu altında ve şifreyi "Password" sütunu altında yeni bir satır   olarak registered_users.xlsx Excel dosyasına ekleyecektir. mode='a' parametresi, dosyanın varsa mevcut verilerin sonuna eklemesini sağlar.  Buna ek olarak, header=True parametresi ile başlık satırının sadece ilk kez eklenmesi sağlanır.  
-* df.index += 1: Bu satır, df veri çerçevesinin index sütununa 1 ekleyerek indeks değerlerini 1 artırır.  
-* Böylece, view_registered_users fonksiyonu kullanıcıları görüntülerken indeks değerlerini 1'den başlatır.  
-* Sonuç olarak, admin kullanıcı listesini görüntülerken kullanıcılar 1'den başlayarak numaralandırılır.  
+* Pandas kütüphanesi kullanarak kullancıların adılar ve şifreleri excel dosya içerdisinde kaydediliyor. 
 Thanks for reading :)  
 MOAYAD ALNADA  
 201601716  
