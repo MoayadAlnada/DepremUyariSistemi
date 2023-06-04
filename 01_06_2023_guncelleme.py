@@ -70,7 +70,7 @@ def save_credentials(kullanciadi, sifresi):
         pass
 
     df.to_excel('kayitli_kullancilar.xlsx', index=False)
-    print("Credentials saved successfully!")
+    print("bilgileri başarıyla kaydedildi!")
 
 def kayitli_kullancilar():
     try:
