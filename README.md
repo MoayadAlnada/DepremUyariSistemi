@@ -12,7 +12,7 @@ Dönem_projesi.py İçeriyi:
 * Liste, Demet ve sözlük kullanıldı.  
 
 01_06_2023_guncelleme.py İçeriyi:  
-* Pandas kütüphanesi kullanarak kullancıların adılar ve şifreleri excel dosya içerdisinde kaydediliyor. 
+* Pandas kütüphanesi kullanılarak, kullanıcı adları ve parolalar bir Excel dosyasına kaydedilir.  
 Thanks for reading :)  
 MOAYAD ALNADA  
 201601716  
