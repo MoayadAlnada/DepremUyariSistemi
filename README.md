@@ -13,6 +13,8 @@ Dönem_projesi.py İçeriyi:
 
 01_06_2023_guncelleme.py İçeriyi:  
 * Pandas kütüphanesi kullanılarak, kullanıcı adları ve parolalar bir Excel dosyasına kaydedilir.  
+
+
 Thanks for reading :)  
 MOAYAD ALNADA  
 201601716  
