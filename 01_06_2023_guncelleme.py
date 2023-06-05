@@ -5,7 +5,6 @@ kullancilar = {}
 adminler = ["admin","123456789+"]
 mesajlar = []
 uyarilar = []
-i = 1
 back = False
 anamenu = False
 
