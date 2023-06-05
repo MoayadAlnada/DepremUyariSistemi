@@ -53,13 +53,7 @@ def dorduncu_menu():
     print("2. Admin şifresini değiştirmek")
     print("\033[90m3. Geri\033[0m")
 
-
-def enter_credentials():
-    kullanciadi = input("Kullanıcı adınızı giriniz: ")
-    sifresi = input("Şifre belirleyiniz: ")
-    return kullanciadi, sifresi
-
-def save_credentials(kullanciadi, sifresi):
+def kayit(kullanciadi, sifresi):
     data = {'kullanciadi': [kullanciadi], 'Şifre': [sifresi]}
     df = pd.DataFrame(data)
 
@@ -96,7 +90,7 @@ while True:
             sifre = input("Şifre belirleyiniz: ")
             if len(sifre) >= 6:
                 kullancilar[kullanici_adi] = sifre
-                save_credentials(kullanici_adi, sifre)
+                kayit(kullanici_adi, sifre)
                 break
             else:
                 print("\n---Şifreniz en az 6 karakter olmalıdır---")
